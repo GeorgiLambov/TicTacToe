@@ -4,12 +4,25 @@
   "description": "ES6 React/Redux based example of the TicTacToe.",
   "author": "Georgi Lambov",
   "license": "MIT",
-  "main": "./public/bundle.js",
+  "main": "./public/App.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/GeorgiLambov/TicTacToe"
   },
   "devDependencies": {},
   "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.2.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
   }
 }
