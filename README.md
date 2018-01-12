@@ -6,5 +6,18 @@ More information about Minimax algorithm [here][minimax_wiki].
 You can see my implementation [here][gridComputer].
 
 [minimax_wiki]: https://en.wikipedia.org/wiki/Minimax
-[gridComputer]:
- 
+[gridComputer]:  https://github.com/GeorgiLambov/TicTacToe/blob/master/src/js/Services/GridComputer.js
+
+# Demo
+
+...
+
+# Installing
+
+ - Clone the repo
+ - Run `npm install`
+ - Run `npm install grunt-cli -g`
+ - Run `grunt`
+
+You should now have running page at `http://localhost:9001`.
+
