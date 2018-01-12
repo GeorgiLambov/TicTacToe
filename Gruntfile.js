@@ -84,6 +84,7 @@ module.exports = function(grunt) {
         }
     });
 
+    // Load the plugin's
     grunt.loadNpmTasks("grunt-browserify");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-connect");
@@ -91,5 +92,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-concurrent");
     grunt.loadNpmTasks("grunt-sass");
 
+    // Default task(s).
     grunt.registerTask("default", ["copy", "sass", "concurrent"]);
 };
