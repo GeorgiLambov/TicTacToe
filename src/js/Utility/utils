@@ -1,0 +1,49 @@
+import Constants from "./Constants";
+
+export function IsFull(grid) {
+    return grid.indexOf(Constants.PLAYER._) === -1;
+}
+
+export function GetWinner(grid) {
+    // for each row
+    for (let i = 0; i < 3; i++) {
+        if (
+            grid.get(i) === grid.get(i + 3) &&
+            grid.get(i) === grid.get(i + 6) &&
+            grid.get(i) !== Constants.PLAYER._
+        ) {
+            return grid.get(i);
+        }
+    }
+
+    // for each column
+    for (let i = 0; i <= 6; i += 3) {
+        if (
+            grid.get(i) === grid.get(i + 1) &&
+            grid.get(i) === grid.get(i + 2) &&
+            grid.get(i) !== Constants.PLAYER._
+        ) {
+            return grid.get(i);
+        }
+    }
+
+    // left diagonal
+    if (
+        grid.get(0) === grid.get(4) &&
+        grid.get(0) === grid.get(8) &&
+        grid.get(0) !== Constants.PLAYER._
+    ) {
+        return grid.get(0);
+    }
+
+    // right diagonal
+    if (
+        grid.get(2) === grid.get(4) &&
+        grid.get(2) === grid.get(6) &&
+        grid.get(2) !== Constants.PLAYER._
+    ) {
+        return grid.get(2);
+    }
+
+    return Constants.PLAYER._;
+}

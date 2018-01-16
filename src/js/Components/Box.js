@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Constants from "../Constants";
+import Constants from "../Utility/Constants";
 
 export default class Box extends React.Component {
     handleClick() {
