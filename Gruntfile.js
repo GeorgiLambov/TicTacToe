@@ -1,6 +1,3 @@
-/**
- * Created by g.lambov on 12.01.2018.
- */
 module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
@@ -17,7 +14,7 @@ module.exports = function(grunt) {
                     ]
                 },
                 files: {
-                    "./public/App.js": ["./src/js/Client.js"]
+                    "./public/bundle.js": ["./src/js/Client.js"]
                 }
             }
         },
@@ -45,7 +42,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    "public/base.css": "src/base.scss"
+                    "public/style.css": "src/base.scss"
                 }
             }
         },
