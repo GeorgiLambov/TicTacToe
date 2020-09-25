@@ -73,4 +73,4 @@ export class GridComputer {
     getOppositePlayer(player) {
         return player === Constants.PLAYER.X ? Constants.PLAYER.O : Constants.PLAYER.X;
     }
-};
+}
