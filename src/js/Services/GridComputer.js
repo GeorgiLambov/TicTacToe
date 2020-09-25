@@ -53,7 +53,7 @@ export class GridComputer {
         } else if (result === Constants.PLAYER._) {
             return 0;
         }
-
+  test
         return depth - 10;
     }
 
