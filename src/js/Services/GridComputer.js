@@ -44,8 +44,6 @@ export class GridComputer {
         if (depth === 0 && player === Constants.PLAYER.X) {
             this.bestChoise = optimalMove;
         }
-
-
         return result;
     }
 
