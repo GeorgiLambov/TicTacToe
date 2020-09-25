@@ -45,6 +45,7 @@ export class GridComputer {
             this.bestChoise = optimalMove;
         }
 
+
         return result;
     }
 
