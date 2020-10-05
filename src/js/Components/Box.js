@@ -29,7 +29,7 @@ export default class Box extends React.Component {
             <div className={"box " + boxClass} onClick={this.handleClick.bind(this)}>
                 {boxSymbol}
             </div>
-        );
+        )
     }
 }
 
